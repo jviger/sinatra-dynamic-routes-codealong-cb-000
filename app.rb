@@ -25,5 +25,10 @@ class App < Sinatra::Base
   erb :'/medicines/show.html'
   end
   
+  get "/multiply/:num1/:num2" do
+    @user_name = params[:name]
+    "Goodbye, #{@user_name}."
+  end
+  
 
 end
